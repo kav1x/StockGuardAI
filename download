@@ -1,0 +1,10 @@
+.env
+adobe_saas.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+.DS_Store
+Thumbs.db
+profile_uploads/

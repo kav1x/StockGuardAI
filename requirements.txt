@@ -1,0 +1,10 @@
+streamlit
+torch
+torchvision
+pillow
+numpy
+pandas
+scikit-learn
+bcrypt
+opencv-python
+python-dotenv
