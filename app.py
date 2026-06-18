@@ -469,7 +469,7 @@ def apply_custom_styles() -> None:
             padding-right: 1rem !important;
         }
 
-        [data-testid="stMainBlockContainer"] {
+        [data-testid="stMainBlockContainer"][data-testid="stMainBlockContainer"] {
             max-width: 1280px !important;
             padding-left: 1rem !important;
             padding-right: 1rem !important;
@@ -1004,7 +1004,9 @@ def apply_custom_styles() -> None:
         .admin-metric-card,
         .admin-user-card,
         .admin-plan-card,
-        .admin-hero {
+        .admin-hero,
+        .image-review-card,
+        .similar-group-card {
             border: 1px solid #E2E8F0 !important;
             border-radius: 16px !important;
             background: #FFFFFF !important;
@@ -1049,7 +1051,21 @@ def apply_custom_styles() -> None:
             border-radius: 16px !important;
             background: #FFFFFF !important;
             border: 1px solid #E2E8F0 !important;
-            box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06) !important;
+            box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06) !important;
+        }
+
+        .image-review-card {
+            padding: 0.75rem !important;
+            gap: 0.45rem !important;
+        }
+
+        .similar-group-card {
+            padding: 0.85rem 1rem !important;
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            align-items: center !important;
+            gap: 0.55rem !important;
+            margin-bottom: 0.75rem !important;
         }
 
         .admin-metric-icon {
@@ -1991,6 +2007,10 @@ def apply_custom_styles() -> None:
             letter-spacing: -0.012em !important;
         }
 
+        [data-testid="stExpander"] [data-testid="stVerticalBlock"] {
+            gap: 0.5rem !important;
+        }
+
         .sg-page-header,
         .sg-saas-card,
         .sg-card,
@@ -2003,7 +2023,9 @@ def apply_custom_styles() -> None:
         .admin-hero,
         .admin-metric-card,
         .admin-user-card,
-        .admin-plan-card {
+        .admin-plan-card,
+        .image-review-card,
+        .similar-group-card {
             border-color: rgba(148, 163, 184, 0.28) !important;
             border-radius: 18px !important;
             box-shadow: 0 12px 30px rgba(15, 23, 42, 0.055) !important;
@@ -2727,7 +2749,9 @@ def apply_custom_styles() -> None:
         .sg-action-card,
         .admin-plan-card,
         .admin-user-card,
-        .status-card {
+        .status-card,
+        .image-review-card,
+        .similar-group-card {
             animation: sgSoftFadeIn 280ms ease-out both !important;
             transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease !important;
         }
